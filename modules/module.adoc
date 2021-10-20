@@ -5,7 +5,7 @@
 
 
 
-= Concept That You're Covering (e.g. "How to Carry Technical Information")
+= Production Cluster
 
 
 {sp} +
@@ -32,15 +32,39 @@ image::learning-objectives.svg[pdfwidth=90%]
 |
 By completing this module, you will be able to:
 
-* objective
-* objective
-* objective
+* Set up clusters per Best Practice Specifications
+• Set up the network as per the Network Specification
+• Provision the Confluent cluster and deploy any self-managed Confluent components as defined by
+the Cluster Specification
+• Set up Confluent component monitoring as defined by the Monitoring Specification
+• Apply the security mechanisms defined by the Security Specification to the platform
+* Anticipate the demands of cluster applicatiosns during scaling
+
 
 |===
 
 **** Note to CDev: Not all concepts will need all of the following headers. Please use what's appropriate and remove the rest. Please incorporate images as much as possible. You can and should adapt this template to accommodate the concept. Please work with the guidance from the SME and work through all the important points. The follow sections are suggestions to help keep the training consistent between both the individual modules and the Adopting Confluent book.
 
-Before you begin, you should have a good understanding of XYZ. If you're not yet familiar with that topic, please see ABC.
+Before you begin, you should have a good understanding of:
+Infrastructure Specification and Cluster Specification informed by:
+◦ Managed Cluster
+◦ Cluster Sizing
+◦ Highly Available Platform Design
+◦ Multi-Data Center
+• Network Specification informed by:
+◦ Platform Networking
+◦ Multi-Data Center
+• Security Specification informed by:
+◦ Security Foundations
+◦ End-to-End Encryption
+◦ Secret Protection Design
+◦ User Access Management
+• Monitoring Specification informed by:
+◦ Platform Monitoring
+◦ Solution Observability
+
+
+If you're not yet familiar with that topic, please see ABC.
 
 == What problem does it solve?
 
