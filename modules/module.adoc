@@ -43,55 +43,86 @@ the Cluster Specification
 
 |===
 
-**** Note to CDev: Not all concepts will need all of the following headers. Please use what's appropriate and remove the rest. Please incorporate images as much as possible. You can and should adapt this template to accommodate the concept. Please work with the guidance from the SME and work through all the important points. The follow sections are suggestions to help keep the training consistent between both the individual modules and the Adopting Confluent book.
-
 Before you begin, you should have a good understanding of:
+
 ◦ Managed Cluster
+
 ◦ Cluster Sizing
+
 ◦ Highly Available Platform Design
+
 ◦ Multi-Data Center
+
 ◦ Platform Networking
+
 ◦ Multi-Data Center
+
 ◦ Security Foundations
+
 ◦ End-to-End Encryption
+
 ◦ Secret Protection Design
+
 ◦ User Access Management
+
 ◦ Platform Monitoring
+
 ◦ Solution Observability
 
-
 If you're not yet familiar with those topics, please see the sections of the Adopting Confluent book that carry those titles.
+---
 
+== What problem does this solve?
 
-== What problem does it solve?
+A production Confluent cluster allows you to:
 
-We need the log to retain all events forever, otherwise it is not possible to recreate a data store from scratch.
-We need log consumption to be ordered. If events with causal relationships are processed out of order, the result will be wrong.
+* Stream production data between applications for a single line of business
+
+* Service the anticipated demands of cluster applications as it is used and grows
+
+* Experience real-world data and application workloads to inform future sizing requirements
+
+* Validate and tests architectural specifications made to date
 ---
 
 == Why is it important?
 
-Describing why this topic is important to success with Data in Motion.   
-
+The production cluster is the initial waypoint for officially bringing streaming data use cases online. The cluster is built on the knowledge and testing done in previous stages, to deliver a working product to a line of business with confidence.
 ---
 
 == Who does this involve?
 
-A brief paragraph or two explaining who (personas) cares about this topic and what their interaction with it is. 
+This topic is intended for the primary consideration of the platform owner.
 
----
+The following roles are responsible for implementation:
+
+- Operations engineer
+
+- Platform engineer
 
 == When does it matter?
 
-A paragraph or two describing when this topic becomes important in the Data in Motion journey and what other topics it builds upon. 
-
----
+You must address this topic before onboarding production workloads.
 
 == Concept (e.g. Carrying Technical Information)
 
-This is where the instruction on the topic will go. The idea is to keep the training to be around 10 minutes or so. Keep your learner role(s) in mind and also where they are in the AF so that you can make assumptions about what they already know and meet them where they're at.
+You will need to do the following:
 
----
+- Set up the network as per the Network Specification
+
+- Provision the Confluent cluster and deploy any self-managed Confluent components as defined by the Cluster Specification
+
+- Set up Confluent component monitoring as defined by the Monitoring Specification
+
+- Apply the security mechanisms defined by the Security Specification to the platform
+
+Prior to onboarding workloads, perform the following platform assurance:
+
+- Perform a connectivity test to ensure that all Confluent components are reachable by client applications and working in conjunction with each other
+
+- Validate that you can monitor the health of all platform components
+
+- Validate that the client applications that do not meet the access criteria defined by the Security Specification are unable to do so
 
 == Challenge your understanding
 
