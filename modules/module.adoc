@@ -128,6 +128,12 @@ Prior to onboarding workloads, perform the following platform assurance:
 
 This is the place to try to challenge the learner with thought exercises, actual exercises, or challenges that help to reinforce the instruction.
 
+Think about the needs of for your cluster:
+
+- Non-critical production clusters service the initial use cases for a single line of business. Applications are less critical and the architecture is simplified for ease of management.
+
+- Business-critical production clusters focus on reliability, often across multiple data centers or regions and rely heavily on disaster recovery plans from day one.
+
 ---
 
 == Additional resources
