@@ -38,7 +38,7 @@ By completing this module, you will be able to:
 the Cluster Specification
 • Set up Confluent component monitoring as defined by the Monitoring Specification
 • Apply the security mechanisms defined by the Security Specification to the platform
-* Anticipate the demands of cluster applicatiosns during scaling
+* Anticipate the demands of cluster applications during scaling
 
 
 |===
@@ -46,30 +46,27 @@ the Cluster Specification
 **** Note to CDev: Not all concepts will need all of the following headers. Please use what's appropriate and remove the rest. Please incorporate images as much as possible. You can and should adapt this template to accommodate the concept. Please work with the guidance from the SME and work through all the important points. The follow sections are suggestions to help keep the training consistent between both the individual modules and the Adopting Confluent book.
 
 Before you begin, you should have a good understanding of:
-Infrastructure Specification and Cluster Specification informed by:
 ◦ Managed Cluster
 ◦ Cluster Sizing
 ◦ Highly Available Platform Design
 ◦ Multi-Data Center
-• Network Specification informed by:
 ◦ Platform Networking
 ◦ Multi-Data Center
-• Security Specification informed by:
 ◦ Security Foundations
 ◦ End-to-End Encryption
 ◦ Secret Protection Design
 ◦ User Access Management
-• Monitoring Specification informed by:
 ◦ Platform Monitoring
 ◦ Solution Observability
 
 
-If you're not yet familiar with that topic, please see ABC.
+If you're not yet familiar with those topics, please see the sections of the Adopting Confluent book that carry those titles.
+
 
 == What problem does it solve?
 
-What is the “big picture” here? What are the use cases? Why are we doing this? Why is this relevant? Should be informed/aligned with https://docs.google.com/spreadsheets/d/1rLFQDGta9qb2ri5fRQhK9WJemoQ0x1SLfGPzRqBhamo/edit#gid=0[company messaging].
-
+We need the log to retain all events forever, otherwise it is not possible to recreate a data store from scratch.
+We need log consumption to be ordered. If events with causal relationships are processed out of order, the result will be wrong.
 ---
 
 == Why is it important?
