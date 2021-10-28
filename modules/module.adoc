@@ -145,6 +145,8 @@ Think about the needs of for your cluster:
 
 == Additional resources
 
+https://www.confluent.io/resources/kafka-the-definitive-guide/ 
+
 **Infrastructure Specification and Cluster Specification:**
 
 {AFT28} https://docs.confluent.io/platform/current/tutorials/examples/ccloud/docs/beginner-cloud.html 
