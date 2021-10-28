@@ -70,6 +70,7 @@ Before you begin, you should have a good understanding of:
 ◦ Solution Observability
 
 If you're not yet familiar with those topics, please see the sections of the Adopting Confluent book that carry those titles.
+
 ---
 
 == What problem does this solve?
