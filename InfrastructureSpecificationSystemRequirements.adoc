@@ -1,0 +1,127 @@
+:imagesdir: ../images/
+:source-highlighter: rouge
+:icons: font
+
+
+= Infrastructure Specification : System Requirements
+
+
+{sp} +
+{sp} +
+{sp} +
+
+
+image::color_logo.png[align="center",pdfwidth=75%]
+
+
+{sp}+
+
+
+
+[cols="5a,1a,14a",grid="none",frame="none"]
+|===
+|
+
+{sp}+
+{sp}+
+
+image::learning-objectives.svg[pdfwidth=90%]
+|
+|
+By completing this module, you will be able to:
+
+* Understand the commands and outcomes that go into your production cluster's infrastructure
+
+
+|===
+
+
+Before you begin, you should have a good understanding of:
+
+* Data usage and cluster architecture plans
+
+* Information on several operational items: 
+
+  Total number of partitions in the cluster
+
+  Amount of data ingress and egress for the cluster and its network bandwidth
+
+  Number of applications or services accessing the cluster
+
+  Types of queries or calls to be made by applications
+
+  Data retention policies
+
+  Deployment environment (e.g., cloud provider)
+
+  Application availability requirements
+
+Data usage and cluster architecture plans are needed before this task can be completed. Information on several operational items is required to complete the utilization estimates.
+
+== Why is it important?
+
+It is important to create a Confluent deployment with the correct hardware specifications and correct number of nodes for each component of the platform.
+
+== Who does this involve?
+
+* Enterprise Architects
+
+* Platform owners
+
+* Infrastructure team
+
+== When does it matter?
+
+A correctly sized cluster will ensure that the target performance and reliability requirements defined by the SLA are met. You should define a cluster sizing strategy before:
+
+* Ordering hardware
+
+* Cluster deployments
+
+== Create your system requirements 
+
+What type of cluster do you need:
+
+* A production cluster: 
+
+* A geographically redundant disaster recovery cluster: 
+
+* A pre-production cluster, typically with the same deployment characteristics as the production cluster: 
+
+* A dev and/or an integration cluster: 
+
+You will need to understand how to size the following Confluent components separately:
+
+Apache ZooKeeper: 
+
+Confluent Server: 
+
+Kafka Connect: 
+
+Confluent Schema Registry: 
+
+ksqlDB: 
+
+Control Center: 
+
+You will need to prepare a bill of materials for software and hardware procurement. For each node type, these documents should address requirements for:
+
+Number of nodes at each CPU level or cloud service tier
+
+Data storage size and data redundancy strategy
+
+Memory size
+
+Networking bandwidth
+
+
+== Additional resources
+
+* https://docs.confluent.io/ccloud-cli/current/index.html[Ccloud CLI commands^]
+* https://www.confluent.io/blog/testing-kafka-applications/[Create a severless enviroment^]
+* https://docs.confluent.io/platform/current/tutorials/examples/ccloud/docs/beginner-cloud.html[Beginner Cloud tutorials^]
+
+[.text-center]
+Copyright © Confluent, Inc. 2014-2021. https://www.confluent.io/confluent-privacy-statement/[Privacy Policy] | https://www.confluent.io/terms-of-use/[Terms & Conditions]. +
+Apache, Apache Kafka, Kafka and the Kafka logo are trademarks of the +
+http://www.apache.org/[Apache Software Foundation]
