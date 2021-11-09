@@ -4,7 +4,7 @@
 
 
 
-= Architecting Infrastructure : Manage Cluster
+= Cluster Specification : Manage Cluster
 
 
 {sp} +
