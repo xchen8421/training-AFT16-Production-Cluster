@@ -1,0 +1,99 @@
+:imagesdir: ../images/
+:source-highlighter: rouge
+:icons: font
+
+
+
+= Architecting Infrastructure : Manage Cluster
+
+
+{sp} +
+{sp} +
+{sp} +
+
+
+image::color_logo.png[align="center",pdfwidth=75%]
+
+
+{sp}+
+
+
+
+[cols="5a,1a,14a",grid="none",frame="none"]
+|===
+|
+
+{sp}+
+{sp}+
+
+image::learning-objectives.svg[pdfwidth=90%]
+|
+|
+By completing this module, you will be able to:
+
+* Understand the commands and outcomes that go into your production cluster's infrastructure
+
+
+|===
+
+
+Before you begin, you should have a good understanding of:
+
+* Cluster Sizing
+
+
+If you're not yet familiar with this topic, please see the sections of the Adopting Confluent book that carry this title.
+
+== Why is it important?
+
+A fully managed cluster allows you to manage Confluent cluster as a service to abstract the complexity of creating and maintaining a Confluent Cluster.
+
+
+== Who does this involve?
+
+* Enterprise Architects
+
+* Operations Team
+
+* Infrastructure Team
+
+
+
+== When does it matter?
+
+Understanding how to manage your cluster begins when you create your first cluster.
+
+== Match the command to the outcome
+
+Commands
+
+* ccloud create enviroment
+* ccloud environment use
+* ccloud create cluster
+* ccloud kafka cluster use
+* ccloud kafka topic create
+* ccloud kafka topic produce
+* ccloud kafka topic consume
+
+Outcome
+
+* Generates enviroment ID and creates enviroment name
+* Sets active enviroment
+* Generates cluster type, endpoint, API endpoint, availibility
+* Displays ingress, egress, storage, provider, region, and status
+* Sets active cluster
+* Generates new topic
+* Enters manual data into a topic
+* Recieves manual data from a topic
+
+
+== Additional resources
+
+* https://docs.confluent.io/ccloud-cli/current/index.html[Ccloud CLI commands^]
+* https://www.confluent.io/blog/testing-kafka-applications/[Create a severless enviroment^]
+* https://docs.confluent.io/platform/current/tutorials/examples/ccloud/docs/beginner-cloud.html[Beginner Cloud tutorials^]
+
+[.text-center]
+Copyright © Confluent, Inc. 2014-2021. https://www.confluent.io/confluent-privacy-statement/[Privacy Policy] | https://www.confluent.io/terms-of-use/[Terms & Conditions]. +
+Apache, Apache Kafka, Kafka and the Kafka logo are trademarks of the +
+http://www.apache.org/[Apache Software Foundation]
