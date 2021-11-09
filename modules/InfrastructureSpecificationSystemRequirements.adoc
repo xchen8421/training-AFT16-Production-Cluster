@@ -80,29 +80,89 @@ A correctly sized cluster will ensure that the target performance and reliabilit
 
 == Create your system requirements 
 
-What type of cluster do you need:
+Decide which cloud provider you want to spin up the confluent cloud cluster if using Confluent Cloud.
 
-* A production cluster: 
+* AWS
+* Google Cloud
+* Microsoft Azure
+* Internet enabled cluster
 
-* A geographically redundant disaster recovery cluster: 
+**What type of cluster do you need:**
 
-* A pre-production cluster, typically with the same deployment characteristics as the production cluster: 
+* **A production cluster:** The single datacenter design provides robust protection against broker failure. If a client application is using a certain broker for connectivity to the cluster, and that broker fails, another bootstrap broker can provide connectivity to the cluster. However, this single Kafka deployment is vulnerable if the entire datacenter fails. A Standard or Dedicated cluster would work best for this type.
 
-* A dev and/or an integration cluster: 
+* **A geographically redundant disaster recovery cluster:** Ensures in case of catastrophic hardware failure, software failure, power outage, denial of service attack, or any other event that causes one datacenter to completely fail—Kafka continues running in another datacenter until service is restored. Crucial for essential services.  A Dedicated cluster is best for this type.
 
-You will need to understand how to size the following Confluent components separately:
+* **A pre-production cluster:** Typically with the same deployment characteristics as the production cluster. A Basic cluster would be a more economically option, but Standard is also an option. 
 
-Apache ZooKeeper: 
+* **A dev and/or an integration cluster:** A cluster for testing with Confluent Platform and Cloud. A Basic cluster works best for this type.
 
-Confluent Server: 
 
-Kafka Connect: 
+You will need to understand how to size the following Confluent components separately, you can use the sizing calculator or you can make your own spreadsheet. Here are the hardware requirements for each component:
 
-Confluent Schema Registry: 
+**Apache ZooKeeper**
 
-ksqlDB: 
+* Nodes: 3-5
+* Storage: Transaction log: 512 GB / Storage: 2 X 1 TB SATA, RAID 10
+* Memory: 4 GB RAM
+* CPU: 2-4 cores
 
-Control Center: 
+**Broker**
+
+* Nodes: 
+* Storage: 
+* Memory: 
+* CPU:
+
+**Kafka Connect**
+
+* Nodes: 2
+* Storage: Only required for installation
+* Memory: 0.5 - 4 GB heap size depending on connectors
+* CPU: Typically not CPU- bound. More cores is better than faster cores.
+
+**Confluent Schema Registry** 
+
+* Nodes: 2
+* Storage: Only required for installation
+* Memory: 1 GB heap size
+* CPU: Typically not CPU- bound. More cores is better than faster cores.
+
+**ksqlDB**
+
+* Nodes: 2
+* Storage: Use SSD. Sizing depends on the number of concurrent queries and the aggregation performed.
+* Memory: 20 GB RAM
+* CPU: 4 cores
+
+**Control Center**
+
+* Nodes: 1
+* Storage: 300 GB, preferably SSDs
+* Memory: 32 GB RAM (JVM default 6 GB)
+* CPU: 12 cores or more
+
+**Control Center - Reduced infrastructure mode**
+
+* Nodes: 1
+* Storage: 128 GB, preferably SSDs
+* Memory: 8 GB RAM (JVM default 4 GB)
+* CPU: 4 cores or more
+
+**REST Proxy**
+
+* Nodes: 
+* Storage: 
+* Memory: 
+* CPU:
+
+**Replicator**
+ 
+* Nodes: 
+* Storage: 
+* Memory: 
+* CPU:
+
 
 You will need to prepare a bill of materials for software and hardware procurement. For each node type, these documents should address requirements for:
 
@@ -117,7 +177,7 @@ Networking bandwidth
 
 == Additional resources
 
-* https://docs.confluent.io/ccloud-cli/current/index.html[Ccloud CLI commands^]
+* https://eventsizer.io/granular[Cluster sizing calculators^]
 * https://www.confluent.io/blog/testing-kafka-applications/[Create a severless enviroment^]
 * https://docs.confluent.io/platform/current/tutorials/examples/ccloud/docs/beginner-cloud.html[Beginner Cloud tutorials^]
 
