@@ -30,8 +30,7 @@ image::learning-objectives.svg[pdfwidth=90%]
 |
 By completing this module, you will be able to:
 
-* Understand the commands and outcomes that go into your production cluster's infrastructure
-
+* You'll be able to document the number of required Confluent components, the hardware requirements for every node, and in doing so, verify that the infrastructure will meet both functional and non-functional requirements.
 
 |===
 
@@ -109,10 +108,10 @@ You will need to understand how to size the following Confluent components separ
 
 **Broker**
 
-* Nodes: 
-* Storage: 
-* Memory: 
-* CPU:
+* Nodes: 3
+* Storage: 12 X 1 TB disk. RAID 10 is optional. Separate OS disks from Apache Kafka® storage
+* Memory: 64 GB RAM
+* CPU: Dual 12 core sockets
 
 **Kafka Connect**
 
@@ -151,18 +150,18 @@ You will need to understand how to size the following Confluent components separ
 
 **REST Proxy**
 
-* Nodes: 
-* Storage: 
-* Memory: 
-* CPU:
+* Nodes: 2 
+* Storage: Only required for installation
+* Memory: 1 GB overhead plus 64 MB per producer and 16 MB per consumer
+* CPU: 16 cores to handle HTTP requests in parallel and background threads for consumers and producers.
 
 **Replicator**
  
-* Nodes: 
-* Storage: 
-* Memory: 
-* CPU:
-
+* Nodes: 2
+* Storage: Only required for installation
+* Memory: 0.5 - 4 GB heap size depending on connectors
+* CPU: Typically not CPU- bound. More cores is better than faster cores.
+* If deploying Confluent Platform on AWS VMs and running Replicator as a connector, be aware that VMs with burstable CPU types (T2, T3, T3a, and T4g) will not support high throughput streaming workloads.
 
 You will need to prepare a bill of materials for software and hardware procurement. For each node type, these documents should address requirements for:
 
@@ -178,8 +177,8 @@ Networking bandwidth
 == Additional resources
 
 * https://eventsizer.io/granular[Cluster sizing calculators^]
-* https://www.confluent.io/blog/testing-kafka-applications/[Create a severless enviroment^]
-* https://docs.confluent.io/platform/current/tutorials/examples/ccloud/docs/beginner-cloud.html[Beginner Cloud tutorials^]
+* https://docs.confluent.io/platform/current/kafka/multi-node.html#cp-multi-node[Configure a multi-node enviroment^]
+* https://docs.confluent.io/platform/current/installation/system-requirements.html#software[Software requirements^]
 
 [.text-center]
 Copyright © Confluent, Inc. 2014-2021. https://www.confluent.io/confluent-privacy-statement/[Privacy Policy] | https://www.confluent.io/terms-of-use/[Terms & Conditions]. +
