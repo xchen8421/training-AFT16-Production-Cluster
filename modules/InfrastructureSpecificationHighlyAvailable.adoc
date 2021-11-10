@@ -1,1 +1,92 @@
+:imagesdir: ../images/
+:source-highlighter: rouge
+:icons: font
 
+
+= Infrastructure Specification : Highly Available
+
+
+{sp} +
+{sp} +
+{sp} +
+
+
+image::color_logo.png[align="center",pdfwidth=75%]
+
+
+{sp}+
+
+
+
+[cols="5a,1a,14a",grid="none",frame="none"]
+|===
+|
+
+{sp}+
+{sp}+
+
+image::learning-objectives.svg[pdfwidth=90%]
+|
+|
+By completing this module, you will be able to:
+
+* Define what you need to do with self-managed Confluent components as well as your applications to ensure that you reach your target level of availability.
+
+|===
+
+
+Before you begin, you should have a good understanding of:
+
+* Data usage and cluster architecture plans
+
+* The number of data centers
+
+* The location of your workloads relative to each other
+
+* The types of workloads (i.e., ingress, egress, or stream processing)
+
+* Recovery Point Objectives (RPO) and Recovery Time Objectives (RTO)
+
+== Why is it important?
+A Highly Available Platform Design allows you to:
+
+* Identify and remove single points of failure.
+
+* Work out how you are going to reach the uptime SLAs for your applications.
+
+* Simplify maintenance by enabling hardware and software components to be taken down without service interruptions.
+
+== Who does this involve?
+
+* Enterprise Architects
+
+* Application Architects
+
+* Operations
+
+== When does it matter?
+ Highly Available Platform Design allows you to identify and remove single points of failure.
+
+Simplify maintenance by enabling hardware and software components to be taken down without service interruptions.
+
+You should define a availabiity strategy before:
+
+* Ordering hardware
+
+* Cluster deployments
+
+== How available should your system be?
+
+
+
+
+== Additional resources
+
+* https://uptime.is/complex[Uptime Calculator^]
+* https://docs.confluent.io/platform/current/kafka/multi-node.html#cp-multi-node[Configure a multi-node enviroment^]
+* 
+
+[.text-center]
+Copyright © Confluent, Inc. 2014-2021. https://www.confluent.io/confluent-privacy-statement/[Privacy Policy] | https://www.confluent.io/terms-of-use/[Terms & Conditions]. +
+Apache, Apache Kafka, Kafka and the Kafka logo are trademarks of the +
+http://www.apache.org/[Apache Software Foundation]
