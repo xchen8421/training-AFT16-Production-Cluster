@@ -65,7 +65,7 @@ A Highly Available Platform Design allows you to:
 * Operations
 
 == When does it matter?
- Highly Available Platform Design allows you to identify and remove single points of failure.
+Highly Available Platform Design allows you to identify and remove single points of failure.
 
 Simplify maintenance by enabling hardware and software components to be taken down without service interruptions.
 
@@ -77,14 +77,58 @@ You should define a availabiity strategy before:
 
 == How available should your system be?
 
+Review the Multi-region Archetecture patterns to understand how to make your system as Available as possible, and then answer the following questions:
 
+* How do you guarantee the availability of the streaming platform to applications?
 
+* How do you ensure that applications see a consistent view of the data?
+
+* How do you recover the platform and surrounding applications within a given set of RPO and RTO constraints?
+
+* What sort of broker and topic configuration is necessary to meet your data durability objectives?
+
+* Define your platform RPO and RTO.
+
+* Map out the data flows between applications.
+
+* Show where applications reside physically and what subsets of data each application instance operates on. Questions to be answered include:
+
+* Do applications have a preferred datacenter due to physical dependencies without which they could not run (e.g., specialized hardware or the presence of a mainframe)?
+
+* Do application instances run in multiple locations concurrently (hot-hot), or are they deployed in a single place and failed over when necessary (hot-cold)?
+
+* Put together a datacenter outage plan spreadsheet that enumerates regional failure scenarios and how each component of the platform and the surrounding applications will behave during regular operation, failover, and fail-back.
+
+* Prepare a deployment architecture document with the above information and a strategy for addressing RPO and RTO objectives. This document should contain a set of deployment diagrams.
+
+* Determine your uptime requirement based on your SLA objectives. You can use the uptime claculator for this as well.
+
+* Create a spreadsheet to identify the individual elements that need to be made highly available and work out the strategy to do that.
+
+* List each component in the overall architecture
+      
+  Kafka Connect connectors
+
+  Streaming applications
+
+  Source and sink systems
+
+* Define impact if the component fails.
+
+  Given the failure, how do you ensure the dependant components keep running?
+
+  How long would the service be down before backup took over?
+
+* Produce a Deployment Architecture that documents how to address availability requirement for each platform component.
+For on-premise or multi-region cloud deployments, this will be an extension of the document produced in {AFT29}.
+
+* Prepare a Deployment Validation Checklist from the Deployment Architecture document.
 
 == Additional resources
 
 * https://uptime.is/complex[Uptime Calculator^]
 * https://docs.confluent.io/platform/current/kafka/multi-node.html#cp-multi-node[Configure a multi-node enviroment^]
-* 
+* https://docs.confluent.io/platform/current/multi-dc-deployments/multi-region-architectures.html#multi-region-architectures[Multi-region Architecture]
 
 [.text-center]
 Copyright © Confluent, Inc. 2014-2021. https://www.confluent.io/confluent-privacy-statement/[Privacy Policy] | https://www.confluent.io/terms-of-use/[Terms & Conditions]. +
