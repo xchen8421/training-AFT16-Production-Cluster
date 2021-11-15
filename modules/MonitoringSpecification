@@ -40,7 +40,15 @@ By completing this module, you will be able to:
 
 **** Note to CDev: Not all concepts will need all of the following headers. Please use what's appropriate and remove the rest. Please incorporate images as much as possible. You can and should adapt this template to accommodate the concept. Please work with the guidance from the SME and work through all the important points. The follow sections are suggestions to help keep the training consistent between both the individual modules and the Adopting Confluent book.
 
-Before you begin, you should have a good understanding of XYZ. If you're not yet familiar with that topic, please see ABC.
+Before we begin you should have a good knowledge of 
+
+Monitoring Specification informed by: 
+https://assets.confluent.io/m/14397e757459a58d/original/20200723-WP-Best_Practices_for_Developing_Apache_Kafka_Applications_on_Confluent_Cloud.pdf 
+{AFT30}https://docs.confluent.io/platform/current/health-plus/index.html and 
+{AFT25}https://docs.confluent.io/platform/current/tutorials/examples/ccloud-observability/docs/index.html 
+
+
+If you're not yet familiar with that topic, please see ABC.
 
 == What problem does it solve?
 
