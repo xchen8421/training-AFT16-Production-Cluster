@@ -5,7 +5,7 @@
 
 
 
-= Concept That You're Covering (e.g. "How to Carry Technical Information")
+= Security Speciifcation
 
 
 {sp} +
@@ -32,9 +32,7 @@ image::learning-objectives.svg[pdfwidth=90%]
 |
 By completing this module, you will be able to:
 
-* objective
-* objective
-* objective
+* Apply the security mechanisms defined by the Security Specification to the platform
 
 |===
 
@@ -74,8 +72,41 @@ This is where the instruction on the topic will go. The idea is to keep the trai
 
 == Challenge your understanding
 
-This is the place to try to challenge the learner with thought exercises, actual exercises, or challenges that help to reinforce the instruction.
+You will need to learn about the following:
 
+What authentication mechanisms are available
+
+What authorization schemes are available in Confluent Platform and Confluent Cloud, and their relative merits
+
+How to set up authentication for Confluent components and the applications that access them
+
+How to enable and configure authorization
+
+How to configure on-the-wire encryption
+
+How to create TLS certificates
+
+How audit logging works within Confluent, and how to enable and access it
+
+You will need to do the following:
+
+Develop a security design that defines:
+
+Which authentication mechanism is to be used given your security requirements and available security infrastructure
+
+Which authorization method is applicable within your deployment—centralized ACLs or Role-Based Access Controls (RBAC)
+
+What operations are logged in audit logs
+
+What components are to be secured, and how
+
+Deliver a security checklist for verification that your infrastructure has been correctly secured
+
+Deploy Confluent Platform components with the selected security measures; validate it using the security checklist
+
+Note
+CP-Ansible and Confluent for Kubernetes support automated deployment of security features. See {AFT24} for details.
+In addition, by applying {AFT74}, you can ensure that messages and/or their sensitive fields are encrypted at re
 ---
 
 == Additional resources
