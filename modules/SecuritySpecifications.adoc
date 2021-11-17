@@ -36,8 +36,6 @@ By completing this module, you will be able to:
 
 |===
 
-**** Note to CDev: Not all concepts will need all of the following headers. Please use what's appropriate and remove the rest. Please incorporate images as much as possible. You can and should adapt this template to accommodate the concept. Please work with the guidance from the SME and work through all the important points. The follow sections are suggestions to help keep the training consistent between both the individual modules and the Adopting Confluent book.
-
 Before you begin, you should have a good understanding of 
 
 * AFT64
@@ -45,39 +43,47 @@ Before you begin, you should have a good understanding of
 * AFT70
 * AFT73
 
-If you're not yet familiar with that topic, please review before attempting exercise.
+If you're not yet familiar with that topic, please review the sections in the Adopting Confluent book before attempting exercise.
 
 == What problem does it solve?
 
-What is the “big picture” here? What are the use cases? Why are we doing this? Why is this relevant? Should be informed/aligned with https://docs.google.com/spreadsheets/d/1rLFQDGta9qb2ri5fRQhK9WJemoQ0x1SLfGPzRqBhamo/edit#gid=0[company messaging].
+WBy default, there is no encryption or authentication, nor are ACLs configured. Any client can communicate to Kafka brokers using the PLAINTEXT port. It is critical that access using this port is restricted to trusted clients only. Network segmentation and/or authorization ACLs can be used to restrict access to trusted IPs in such cases. If neither is used, then the cluster is wide open and can be accessed by anyone.
 
+While non-secured clusters are supported, as are a mix of authenticated, unauthenticated, encrypted and non-encrypted clients, it is recommended to secure the components in your Confluent deployment.
 ---
 
 == Why is it important?
 
-Describing why this topic is important to success with Data in Motion.   
+Confluent Platform is the central nervous system for a business, uniting your organization around an Apache Kafka®-based single source of truth. It is frequently used to store mission-critical data, and therefore enabling security features are crucial.
 
 ---
 
 == Who does this involve?
 
-A brief paragraph or two explaining who (personas) cares about this topic and what their interaction with it is. 
+Engineering manager
+Platform engineer (supporting)
+
+InfoSec architect
+Operations owner
+
+Application engineer
+Application architect
+Platform owner
+Enterprise architect
 
 ---
 
 == When does it matter?
 
-A paragraph or two describing when this topic becomes important in the Data in Motion journey and what other topics it builds upon. 
+You should address this topic before:
+
+Deploying the Confluent Platform in your organization, or creating your first managed cluster in Confluent Cloud
+
+Onboarding users of the platform to leverage Confluent resources
 
 ---
 
-== Concept (e.g. Carrying Technical Information)
-
-This is where the instruction on the topic will go. The idea is to keep the training to be around 10 minutes or so. Keep your learner role(s) in mind and also where they are in the AF so that you can make assumptions about what they already know and meet them where they're at.
-
----
-
-== Challenge your understanding
+== Security Checklist
 
 You will need to learn about the following:
 
