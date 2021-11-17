@@ -62,14 +62,19 @@ Confluent Platform is the central nervous system for a business, uniting your or
 == Who does this involve?
 
 Engineering manager
+
 Platform engineer (supporting)
 
 InfoSec architect
+
 Operations owner
 
 Application engineer
+
 Application architect
+
 Platform owner
+
 Enterprise architect
 
 ---
