@@ -47,7 +47,7 @@ If you're not yet familiar with that topic, please review the sections in the Ad
 
 == What problem does it solve?
 
-WBy default, there is no encryption or authentication, nor are ACLs configured. Any client can communicate to Kafka brokers using the PLAINTEXT port. It is critical that access using this port is restricted to trusted clients only. Network segmentation and/or authorization ACLs can be used to restrict access to trusted IPs in such cases. If neither is used, then the cluster is wide open and can be accessed by anyone.
+By default, there is no encryption or authentication, nor are ACLs configured. Any client can communicate to Kafka brokers using the PLAINTEXT port. It is critical that access using this port is restricted to trusted clients only. Network segmentation and/or authorization ACLs can be used to restrict access to trusted IPs in such cases. If neither is used, then the cluster is wide open and can be accessed by anyone.
 
 While non-secured clusters are supported, as are a mix of authenticated, unauthenticated, encrypted and non-encrypted clients, it is recommended to secure the components in your Confluent deployment.
 ---
