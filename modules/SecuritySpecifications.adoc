@@ -38,7 +38,14 @@ By completing this module, you will be able to:
 
 **** Note to CDev: Not all concepts will need all of the following headers. Please use what's appropriate and remove the rest. Please incorporate images as much as possible. You can and should adapt this template to accommodate the concept. Please work with the guidance from the SME and work through all the important points. The follow sections are suggestions to help keep the training consistent between both the individual modules and the Adopting Confluent book.
 
-Before you begin, you should have a good understanding of XYZ. If you're not yet familiar with that topic, please see ABC.
+Before you begin, you should have a good understanding of 
+
+* AFT64
+* AFT74
+* AFT70
+* AFT73
+
+If you're not yet familiar with that topic, please review before attempting exercise.
 
 == What problem does it solve?
 
@@ -74,39 +81,37 @@ This is where the instruction on the topic will go. The idea is to keep the trai
 
 You will need to learn about the following:
 
-What authentication mechanisms are available
+What authentication mechanisms are available? : https://docs.confluent.io/platform/current/kafka/overview-authentication-methods.html
 
-What authorization schemes are available in Confluent Platform and Confluent Cloud, and their relative merits
+What authorization schemes are available in Confluent Platform and Confluent Cloud, and their relative merits? : https://docs.confluent.io/platform/current/security/authorization-overview.html 
 
-How to set up authentication for Confluent components and the applications that access them
+How to set up authentication for Confluent components and the applications that access them? : https://docs.confluent.io/platform/current/kafka/incremental-security-upgrade.html
 
-How to enable and configure authorization
+How to enable and configure authorization : https://docs.confluent.io/platform/current/security/rbac/enable-rbac-running-cluster.html
 
-How to configure on-the-wire encryption
+How to configure on-the-wire encryption : https://docs.confluent.io/platform/current/kafka/encryption.html
 
-How to create TLS certificates
+How to create TLS certificates : https://www.confluent.io/blog/apache-kafka-security-authorization-authentication-encryption/
 
-How audit logging works within Confluent, and how to enable and access it
+How audit logging works within Confluent, and how to enable and access it : https://docs.confluent.io/platform/current/security/audit-logs/audit-logs-concepts.html
+
 
 You will need to do the following:
 
 Develop a security design that defines:
 
-Which authentication mechanism is to be used given your security requirements and available security infrastructure
+* Which authentication mechanism is to be used given your security requirements and available security infrastructure
 
-Which authorization method is applicable within your deployment—centralized ACLs or Role-Based Access Controls (RBAC)
+* Which authorization method is applicable within your deployment—centralized ACLs or Role-Based Access Controls (RBAC)
 
-What operations are logged in audit logs
+* What operations are logged in audit logs
 
-What components are to be secured, and how
+* What components are to be secured, and how
 
 Deliver a security checklist for verification that your infrastructure has been correctly secured
 
-Deploy Confluent Platform components with the selected security measures; validate it using the security checklist
+Deploy Confluent Platform components with the selected security measures and validate it using the security checklist
 
-Note
-CP-Ansible and Confluent for Kubernetes support automated deployment of security features. See {AFT24} for details.
-In addition, by applying {AFT74}, you can ensure that messages and/or their sensitive fields are encrypted at re
 ---
 
 == Additional resources
