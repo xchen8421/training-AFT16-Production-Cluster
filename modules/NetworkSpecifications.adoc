@@ -72,37 +72,9 @@ Set up an external secrets provider to utilize with the encryption library
 
 Onboard the encryption library with a Professional Services resource
 
-If you're not yet familiar with that topic, please see ABC.
+If you're not yet familiar with that topic, please see the parts of adopting Confluent that addresses those sections.
 
-== What problem does it solve?
 
-What is the “big picture” here? What are the use cases? Why are we doing this? Why is this relevant? Should be informed/aligned with https://docs.google.com/spreadsheets/d/1rLFQDGta9qb2ri5fRQhK9WJemoQ0x1SLfGPzRqBhamo/edit#gid=0[company messaging].
-
----
-
-== Why is it important?
-
-Describing why this topic is important to success with Data in Motion.   
-
----
-
-== Who does this involve?
-
-A brief paragraph or two explaining who (personas) cares about this topic and what their interaction with it is. 
-
----
-
-== When does it matter?
-
-A paragraph or two describing when this topic becomes important in the Data in Motion journey and what other topics it builds upon. 
-
----
-
-== Concept (e.g. Carrying Technical Information)
-
-This is where the instruction on the topic will go. The idea is to keep the training to be around 10 minutes or so. Keep your learner role(s) in mind and also where they are in the AF so that you can make assumptions about what they already know and meet them where they're at.
-
----
 
 == Challenge your understanding
 
