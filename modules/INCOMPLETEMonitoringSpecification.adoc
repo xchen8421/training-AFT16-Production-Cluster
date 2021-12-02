@@ -5,8 +5,7 @@
 
 
 
-= Concept That You're Covering (e.g. "How to Carry Technical Information")
-
+= Monitoring and Observability
 
 {sp} +
 {sp} +
@@ -32,63 +31,58 @@ image::learning-objectives.svg[pdfwidth=90%]
 |
 By completing this module, you will be able to:
 
-* objective
-* objective
-* objective
+* Validate that you can monitor the health of all platform components
 
 |===
-
-**** Note to CDev: Not all concepts will need all of the following headers. Please use what's appropriate and remove the rest. Please incorporate images as much as possible. You can and should adapt this template to accommodate the concept. Please work with the guidance from the SME and work through all the important points. The follow sections are suggestions to help keep the training consistent between both the individual modules and the Adopting Confluent book.
-
 Before we begin you should have a good knowledge of 
 
-Monitoring Specification informed by: 
-https://assets.confluent.io/m/14397e757459a58d/original/20200723-WP-Best_Practices_for_Developing_Apache_Kafka_Applications_on_Confluent_Cloud.pdf 
-{AFT30}https://docs.confluent.io/platform/current/health-plus/index.html and 
+
+{AFT30}https://docs.confluent.io/platform/current/health-plus/index.html
+
 {AFT25}https://docs.confluent.io/platform/current/tutorials/examples/ccloud-observability/docs/index.html 
 
 
-If you're not yet familiar with that topic, please see ABC.
+If you're not yet familiar with that topic, please see Adopting Confluent book.
 
-== What problem does it solve?
+== Validate Monitoring and Observability
 
-What is the “big picture” here? What are the use cases? Why are we doing this? Why is this relevant? Should be informed/aligned with https://docs.google.com/spreadsheets/d/1rLFQDGta9qb2ri5fRQhK9WJemoQ0x1SLfGPzRqBhamo/edit#gid=0[company messaging].
+You will need to include the following in your plans:
 
----
+Essential health and performance indicators for Kafka components and client applications: https://developer.confluent.io/podcast/multi-cloud-monitoring-and-observability-with-the-metrics-api-ft-dustin-cote
 
-== Why is it important?
 
-Describing why this topic is important to success with Data in Motion.   
+Identify the primary indicators and alerts, enable metrics gathering, and ensure that you capture the main ones: https://docs.confluent.io/platform/current/health-plus/telemetry-reporter-metrics.html#telemetry-reporter-metrics
 
----
 
-== Who does this involve?
+Ensure JMX metrics and monitoring stacks are available for each component and client Java applications:: https://docs.confluent.io/platform/current/kafka/monitoring.html 
 
-A brief paragraph or two explaining who (personas) cares about this topic and what their interaction with it is. 
+Integrate with third-party monitoring and log management stacks: https://docs.confluent.io/5.5.0/connect/kafka-connect-datadog-metrics/index.html 
 
----
+Monitor consumer lag and end-to-end latency: https://support.confluent.io/hc/en-us/articles/360022852491-How-to-Troubleshoot-Consumer-Lag 
 
-== When does it matter?
+For self-managed components, learn to use Confluent Control Center for monitoring and alerting: https://docs.confluent.io/platform/current/kafka/metrics-reporter.html
 
-A paragraph or two describing when this topic becomes important in the Data in Motion journey and what other topics it builds upon. 
+For cloud-managed components, learn to use Confluent Cloud UI and Metrics API in Confluent Cloud: https://docs.confluent.io/platform/current/health-plus/index.html
 
----
+How to deploy distributed tracing in a Kafka ecosystem: https://www.confluent.io/blog/importance-of-distributed-tracing-for-apache-kafka-based-applications/
 
-== Concept (e.g. Carrying Technical Information)
+How to set up Confluent Platform Audit Logs: https://docs.confluent.io/platform/current/security/audit-logs/audit-logs-concepts.html
 
-This is where the instruction on the topic will go. The idea is to keep the training to be around 10 minutes or so. Keep your learner role(s) in mind and also where they are in the AF so that you can make assumptions about what they already know and meet them where they're at.
+How to enable and use Confluent Proactive Support: https://support.confluent.io/hc/en-us/articles/360054685452-How-to-enable-Health-
+
 
 ---
 
 == Challenge your understanding
 
-This is the place to try to challenge the learner with thought exercises, actual exercises, or challenges that help to reinforce the instruction.
+Run this monitoring simulation and test your observabilty plan: https://github.com/chuck-confluent/kafka-observability
 
 ---
 
 == Additional resources
 
-Please list additional resources, including white papers, blogs, podcasts, etc.
+https://assets.confluent.io/m/14397e757459a58d/original/20200723-WP-Best_Practices_for_Developing_Apache_Kafka_Applications_on_Confluent_Cloud.pdf 
+
 
 == Internal resources
 
