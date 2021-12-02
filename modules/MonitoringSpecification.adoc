@@ -54,7 +54,7 @@ Essential health and performance indicators for Kafka components and client appl
 Identify the primary indicators and alerts, enable metrics gathering, and ensure that you capture the main ones: https://docs.confluent.io/platform/current/health-plus/telemetry-reporter-metrics.html#telemetry-reporter-metrics
 
 
-Ensure JMX metrics and monitoring stacks are available for each component and client Java applications:: https://docs.confluent.io/platform/current/kafka/monitoring.html 
+Ensure JMX metrics and monitoring stacks are available for each component and client Java applications: https://docs.confluent.io/platform/current/kafka/monitoring.html 
 
 Integrate with third-party monitoring and log management stacks: https://docs.confluent.io/5.5.0/connect/kafka-connect-datadog-metrics/index.html 
 
@@ -83,6 +83,9 @@ Run this monitoring simulation and test your observabilty plan: https://github.c
 
 https://assets.confluent.io/m/14397e757459a58d/original/20200723-WP-Best_Practices_for_Developing_Apache_Kafka_Applications_on_Confluent_Cloud.pdf 
 
+https://docs.confluent.io/platform/current/health-plus/index.html
+
+https://docs.confluent.io/platform/current/tutorials/examples/ccloud-observability/docs/index.html 
 
 == Internal resources
 
