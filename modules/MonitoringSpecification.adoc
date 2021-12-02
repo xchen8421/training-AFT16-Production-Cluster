@@ -37,9 +37,9 @@ By completing this module, you will be able to:
 Before we begin you should have a good knowledge of 
 
 
-{AFT30}https://docs.confluent.io/platform/current/health-plus/index.html
+{AFT30}
 
-{AFT25}https://docs.confluent.io/platform/current/tutorials/examples/ccloud-observability/docs/index.html 
+{AFT25}
 
 
 If you're not yet familiar with that topic, please see Adopting Confluent book.
