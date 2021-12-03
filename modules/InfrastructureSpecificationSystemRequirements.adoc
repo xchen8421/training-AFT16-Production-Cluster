@@ -96,6 +96,8 @@ Decide which cloud provider you want to spin up the confluent cloud cluster if u
 
 * **A dev and/or an integration cluster:** A cluster for testing with Confluent Platform and Cloud. A Basic cluster works best for this type.
 
+DW - I think we should explain the distinction between single and multi-zone clusters (both in the context of CCloud and deploying CP in cloud) vs deploying clusters in several cloud regions, and the 
+benefits/detriments there. This may be appropriate for this section or the Hightly Available section in this AFT.
 
 You will need to understand how to size the following Confluent components separately, you can use the sizing calculator or you can make your own spreadsheet. Here are the hardware requirements for each component:
 

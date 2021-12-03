@@ -4,7 +4,7 @@
 
 
 
-= Cluster Specification : Manage Cluster
+= Cluster Specification : Managed Cluster
 
 
 {sp} +
@@ -41,6 +41,7 @@ Before you begin, you should have a good understanding of:
 
 * Cluster Sizing
 
+DW - I think we should explain how cluster capacity is provisioned in Confluent Cloud, as well as explain the different cluster types and their differences?
 
 If you're not yet familiar with this topic, please see the sections of the Adopting Confluent book that carry this title.
 
@@ -74,6 +75,8 @@ Commands
 * ccloud kafka topic create
 * ccloud kafka topic produce
 * ccloud kafka topic consume
+
+DW - We should update these commands to use the new 'confluent cli v2' nomenclature. Also, do we think its worth showing this workflow using the REST APIs or Terraform provider instead?
 
 Outcome
 

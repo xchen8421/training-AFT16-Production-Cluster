@@ -70,6 +70,8 @@ How to set up Confluent Platform Audit Logs: https://docs.confluent.io/platform/
 
 How to enable and use Confluent Proactive Support: https://support.confluent.io/hc/en-us/articles/360054685452-How-to-enable-Health-
 
+DW - For the above links, perhaps we should position Health+ as a better alternative to C3 for monitoring... C3 is a great dev tool, but my understanding is that from a
+monitoring and alerting standpoint, we are recommending customers use Health+ to monitor Brokers and things like Connect, Rest Proxy, ksqlDB, etc.
 
 ---
 

@@ -97,6 +97,8 @@ What authentication mechanisms are available? : https://docs.confluent.io/platfo
 
 What authorization schemes are available in Confluent Platform and Confluent Cloud, and their relative merits? : https://docs.confluent.io/platform/current/security/authorization-overview.html 
 
+DW - Should we add a link to a doc here for cloud RBAC?
+
 How to set up authentication for Confluent components and the applications that access them? : https://docs.confluent.io/platform/current/kafka/incremental-security-upgrade.html
 
 How to enable and configure authorization : https://docs.confluent.io/platform/current/security/rbac/enable-rbac-running-cluster.html
@@ -106,6 +108,10 @@ How to configure on-the-wire encryption : https://docs.confluent.io/platform/cur
 How to create TLS certificates : https://www.confluent.io/blog/apache-kafka-security-authorization-authentication-encryption/
 
 How audit logging works within Confluent, and how to enable and access it : https://docs.confluent.io/platform/current/security/audit-logs/audit-logs-concepts.html
+
+DW - We should probably link docs to CCloud audit logs as they work a bit differently than in CP.
+
+DW - We should also mention here how network security in terms of FW config also can play a part, but we may want to x-link to the network specifications doc for more details.
 
 **Develop a security design that defines:**
 
