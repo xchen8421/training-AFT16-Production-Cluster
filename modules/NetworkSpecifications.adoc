@@ -48,13 +48,13 @@ By completing this module, you will be able to:
 
 Before you begin, you should have a good understanding of 
 
-* AFT06}
+* AFT06
 
-* AFT14}
+* AFT14
 
-* AFT70}
+* AFT70
 
-* AFT28}
+* AFT28
 
 * Your hosting infrastructure networking capabilities: These are publicly available in cloud providers, but vary in on-premises installations
 
@@ -82,7 +82,7 @@ If you're not yet familiar with that topic, please see the parts of adopting Con
 
 * Validate your network fulfills the minimum requirements for Confluent Platform
 
-* Develop a networking design that defines the following based on this doc https://docs.confluent.io/5.4.2/installation/operator/co-endpoints.html:
+* Develop a networking design that defines the following based on this https://docs.confluent.io/operator/current/co-networking-overview.html[doc]
 
   * What networking infrastructure is used to fulfill your organization’s requirements
 
@@ -100,7 +100,7 @@ Confluent Cloud
 
 **You will need to do the following for Confluent Cloud:**
 
-* Develop a networking design that defines the following based on [this Doc]https://docs.confluent.io/operator/current/co-networking-overview.html)
+* Develop a networking design that defines the following based on this https://docs.confluent.io/operator/current/co-networking-overview.html[doc]
 
   * Networking option that best fits your organization’s needs 
 
@@ -114,8 +114,7 @@ Confluent Cloud
 
 * If using private networking, ensure users can access the Confluent Cloud web console
 
-End-to-End Encyption(
-https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping)
+* https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping[End-to-End Encyption]
 
 
 **You will need to do the following:**
