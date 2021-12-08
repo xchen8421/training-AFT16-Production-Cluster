@@ -56,7 +56,7 @@ Identify the primary indicators and alerts, enable metrics gathering, and ensure
 
 Ensure JMX metrics and monitoring stacks are available for each component and client Java applications: https://docs.confluent.io/platform/current/kafka/monitoring.html 
 
-Integrate with third-party monitoring and log management stacks: https://docs.confluent.io/5.5.0/connect/kafka-connect-datadog-metrics/index.html 
+Integrate with third-party monitoring and log management stacks: https://www.confluent.io/blog/monitor-kafka-clusters-with-prometheus-grafana-and-confluent/
 
 Monitor consumer lag and end-to-end latency: https://support.confluent.io/hc/en-us/articles/360022852491-How-to-Troubleshoot-Consumer-Lag 
 
