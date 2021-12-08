@@ -167,7 +167,7 @@ https://support.confluent.io/hc/en-us/articles/115006506647-Confluent-Platform-O
 
 **Security Specification:**
 
-{AFT65} https://www.confluent.io/blog/secure-kafka-deployment-best-practices/?_ga=2.90628888.368479437.1635180877-1652576.1635180877
+{AFT65} https://www.confluent.io/blog/secure-kafka-deployment-best-practices
 
 {AFT74} https://docs.confluent.io/platform/current/kafka/encryption.html
 https://docs.confluent.io/platform/current/security/compliance.html 
