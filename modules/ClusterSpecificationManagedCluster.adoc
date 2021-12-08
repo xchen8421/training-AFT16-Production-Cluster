@@ -67,13 +67,13 @@ Understanding how to manage your cluster begins when you create your first clust
 
 Commands
 
-* ccloud create enviroment
-* ccloud environment use
-* ccloud create cluster
-* ccloud kafka cluster use
-* ccloud kafka topic create
-* ccloud kafka topic produce
-* ccloud kafka topic consume
+* confluent create enviroment
+* confluent environment use
+* confluent create cluster
+* confluent kafka cluster use
+* confluent kafka topic create
+* confluent kafka topic produce
+* confluent kafka topic consume
 
 Outcome
 
