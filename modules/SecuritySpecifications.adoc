@@ -125,11 +125,11 @@ Deploy Confluent Platform components with the selected security measures and val
 
 == Additional resources
 
-https://docs.confluent.io/platform/current/kafka/overview-authentication-methods.html
-https://www.confluent.io/blog/kafka-security-secret-encryption-with-confluent/ 
-https://docs.confluent.io/platform/current/security/secrets.html#using-prefixes-in-secrets-configurations 
-https://docs.confluent.io/platform/current/kafka/encryption.html#creating-ssl-keys-and-certificates 
-https://docs.confluent.io/platform/current/security/compliance.html 
+* https://docs.confluent.io/platform/current/kafka/overview-authentication-methods.html[Confluent Platform Authentication methods]
+* https://www.confluent.io/blog/kafka-security-secret-encryption-with-confluent/[Secret Encyption] 
+* https://docs.confluent.io/platform/current/security/secrets.html#using-prefixes-in-secrets-configurations[Secret Configuration]
+* https://docs.confluent.io/platform/current/kafka/encryption.html#creating-ssl-keys-and-certificates[SSL keys and certificates]
+* https://docs.confluent.io/platform/current/security/compliance.html[Confluent Platform Compliance] 
 
 [.text-center]
 Copyright © Confluent, Inc. 2014-2021. https://www.confluent.io/confluent-privacy-statement/[Privacy Policy] | https://www.confluent.io/terms-of-use/[Terms & Conditions]. +
