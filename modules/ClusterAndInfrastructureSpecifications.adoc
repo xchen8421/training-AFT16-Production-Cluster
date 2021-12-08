@@ -105,7 +105,7 @@ The following roles are responsible for implementation:
 
 You must address this topic before onboarding production workloads.
 
-== Concept (e.g. Carrying Technical Information)
+== Production Cluster: Specifications
 
 You will need to do the following:
 
