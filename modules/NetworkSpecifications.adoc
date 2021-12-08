@@ -100,7 +100,7 @@ Confluent Cloud
 
 **You will need to do the following for Confluent Cloud:**
 
-* Develop a networking design that defines the following based on [this Doc](https://docs.confluent.io/cloud/current/networking/index.html)
+* Develop a networking design that defines the following based on [this Doc](https://docs.confluent.io/platform/current/installation/system-requirements.html#network)
 
   * Networking option that best fits your organization’s needs 
 
