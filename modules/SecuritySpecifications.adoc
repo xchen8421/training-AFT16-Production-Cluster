@@ -107,6 +107,8 @@ How to create TLS certificates : https://www.confluent.io/blog/apache-kafka-secu
 
 How audit logging works within Confluent, and how to enable and access it : https://docs.confluent.io/platform/current/security/audit-logs/audit-logs-concepts.html and https://docs.confluent.io/cloud/current/monitoring/audit-logging/configure.html
 
+How to configure network security options: https://docs.confluent.io/operator/current/co-network-encryption.html
+
 **Develop a security design that defines:**
 
 * Which authentication mechanism is to be used given your security requirements and available security infrastructure
