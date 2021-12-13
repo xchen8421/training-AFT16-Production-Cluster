@@ -41,8 +41,6 @@ Before you begin, you should have a good understanding of:
 
 * Cluster Sizing
 
-DW - I think we should explain how cluster capacity is provisioned in Confluent Cloud, as well as explain the different cluster types and their differences?
-
 If you're not yet familiar with this topic, please see the sections of the Adopting Confluent book that carry this title.
 
 == Why is it important?
