@@ -74,8 +74,6 @@ Commands
 * confluent kafka topic produce
 * confluent kafka topic consume
 
-DW - We should update these commands to use the new 'confluent cli v2' nomenclature. Also, do we think its worth showing this workflow using the REST APIs or Terraform provider instead?
-
 Outcome
 
 * Generates enviroment ID and creates enviroment name
