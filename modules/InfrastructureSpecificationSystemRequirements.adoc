@@ -96,6 +96,7 @@ Decide which cloud provider you want to spin up the confluent cloud cluster if u
 
 * **A dev and/or an integration cluster:** A cluster for testing with Confluent Platform and Cloud. A Basic cluster works best for this type.
 
+.
 
 You will need to understand how to size the following Confluent components separately, you can use the sizing calculator or you can make your own spreadsheet. Here are the hardware requirements for each component:
 

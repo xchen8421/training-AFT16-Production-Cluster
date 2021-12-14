@@ -111,11 +111,26 @@ You will need to do the following:
 
 - Set up the network as per the Network Specification
 
+DW - What is the Network Specification? What should the user consider regarding networking? 
+Presumably the user should think about where the producers and consumers will be hosted. If this is a
+deployment hosted in a cloud provider (like AWS/GCP/Azure/IBM/Oracle), are you going to colocate your Kafka in the same VPC? Different VPC?
+If a different VPC, what connectivity will you establish to ensure all clients are able to access the cluster appropriately. From a security perspective,
+are the required security groups or firewall rules configured to allow for not only data plane traffic between clients and kafka, but also 
+for cluster management interfaces that may be part of a CI/CD or infra as code process?
+
 - Provision the Confluent cluster and deploy any self-managed Confluent components as defined by the Cluster Specification
+
+DW - What is the Cluster Specification in this context... are we talking about sizing? Instance shape? Actual broker configuration?
 
 - Set up Confluent component monitoring as defined by the Monitoring Specification
 
+DW - What are the monitoring specifications? Is the guidance just Health+ or are we going to include info about c3 or using raw JMX for things like 
+Connect, KStreams, KSQLDB and Clients?
+
 - Apply the security mechanisms defined by the Security Specification to the platform
+
+DW - I assume this not only comprises of auth, at rest encryption, in transit encryption, but also access vectors (related to networking). Can we get some examples of
+what is in scope for the security spec?
 
 Prior to onboarding workloads, perform the following platform assurance:
 
